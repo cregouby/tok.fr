@@ -14,7 +14,6 @@ Description: Interfaces avec la bibliothèque des tokenizers de 'Hugging Face' p
  des implémentations d'algorithmes de tokenisation les plus utilisés aujourd'hui, tels que 
  l'algorithme Byte-Pair Encoding \url{https://huggingface.co/docs/tokenizers/index}. Il est
  extrêmement rapide tant pour former de nouveaux vocabulaires qu'en tokenisation des textes.
-
 License:  MIT + file LICENSE
 Encoding: UTF-8
 Language: fr

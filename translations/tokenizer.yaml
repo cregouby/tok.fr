@@ -464,7 +464,7 @@ section{Methods}:
       }
       \if{html}{\out{</div>}}
     }
-  }
+    }
       \if{html}{\out{<hr>}}
       \if{html}{\out{<a id="method-tok_tokenizer-encode"></a>}}
       \if{latex}{\out{\\hypertarget{method-tok_tokenizer-encode}{}}}
@@ -661,6 +661,121 @@ section{Methods}:
     \if{html}{\out{<hr>}}
     \if{html}{\out{<a id="method-tok_tokenizer-enable_padding"></a>}}
     \if{latex}{\out{\\hypertarget{method-tok_tokenizer-enable_padding}{}}}
+    \subsection{Méthode \code{enable_padding()}}{
+    Active le bourrage pour le tokenizer
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tokenizer$enable_padding(
+      direction = "right",
+      pad_id = 0L,
+      pad_type_id = 0L,
+      pad_token = "[PAD]",
+      length = NULL,
+      pad_to_multiple_of = NULL
+    )}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{direction}}{(str, optionnel, par défaut à droite) — La direction dans laquelle
+    remplir. Peut être soit \code{'right'} ou \code{'left'}}
+
+    \item{\code{pad_id}}{(int, par défaut à 0) — L'identifiant à utiliser lors du remplissage}
+
+    \item{\code{pad_type_id}}{(int, par défaut à 0) — L'identifiant de type à utiliser lors du remplissage}
+
+    \item{\code{pad_token}}{(str, par défaut à \code{'[PAD]'}) — Le token de remplissage à utiliser lors du remplissage}
+
+    \item{\code{length}}{(int, optionnel) — Si spécifié, la longueur à laquelle remplir. Si non
+    spécifié, nous remplissons en utilisant la taille de la séquence la plus longue dans un lot.}
+
+    \item{\code{pad_to_multiple_of}}{(int, optionnel) — Si spécifié, la longueur de remplissage doit toujours se synchroniser sur le multiple suivant de la valeur donnée. Par exemple, si 
+    nous devions remplir avec une longueur de 250 mais \code{pad_to_multiple_of=8}, alors nous remplirons jusqu'à 256.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_tokenizer-no_padding"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_tokenizer-no_padding}{}}}
+    \subsection{Méthode \code{no_padding()}}{
+    Désactive le remplissage
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tokenizer$no_padding()}\if{html}{\out{</div>}}
+    }
+
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_tokenizer-enable_truncation"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_tokenizer-enable_truncation}{}}}
+    \subsection{Méthode \code{enable_truncation()}}{
+    Active la troncature sur le tokenizer
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tokenizer$enable_truncation(
+      max_length,
+      stride = 0,
+      strategy = "longest_first",
+      direction = "right"
+    )}\if{html}{\out{</div>}}
+    }
+      \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{max_length}}{La longueur maximale à laquelle effectuer le tronçonnage.}
+
+    \item{\code{stride}}{La longueur de la première séquence précédente à inclure dans la séquence en surcharge. Par défaut : \code{0}.}
+
+    \item{\code{strategy}}{La stratégie utilisée pour le tronçonnage. Peut être l'un des suivants : "longest_first", "only_first" ou "only_second". Par défaut : "longest_first".}
+
+    \item{\code{direction}}{La direction du tronçonnage. Par défaut : "droite".}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_tokenizer-no_truncation"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_tokenizer-no_truncation}{}}}
+    \subsection{Méthode \code{no_truncation()}}{
+    Désactive le tronçonnage.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tokenizer$no_truncation()}\if{html}{\out{</div>}}
+    }
+
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_tokenizer-get_vocab_size"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_tokenizer-get_vocab_size}{}}}
+    \subsection{Méthode \code{get_vocab_size()}}{
+    Obtient la taille du vocabulaire.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tokenizer$get_vocab_size(with_added_tokens = TRUE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{with_added_tokens}}{Indique s'il faut compter les jetons ajoutés.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_tokenizer-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_tokenizer-clone}{}}}
+    \subsection{Méthode \code{clone()}}{
+    Les objets de cette classe sont clonables avec cette méthode.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tokenizer$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Indique si un clonage profond doit être effectué.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
 untranslatable:
 - alias
 - name

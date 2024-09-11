@@ -1,6 +1,6 @@
 title:
   original: 'This pre-tokenizer simply splits using the following regex: \verb{\\w+|[^\\w\\s]+}'
-  translation: Ce pré-tokeniseur divise simplement en utilisant le regex suivant: \verb{\\w+|[^\\w\\s]+}'
+  translation: 'Ce pré-tokeniseur divise simplement en utilisant le regex suivant: \verb{\\w+|[^\\w\\s]+}'
 
 description:
   original: |
