@@ -1,0 +1,49 @@
+docType:
+  original: package
+  translation: paquet
+title:
+  original: 'tok: Fast Text Tokenization'
+  translation: 'tok : Tokenisation rapide de texte'
+description:
+  original: |
+    Interfaces with the 'Hugging Face' tokenizers library to provide implementations of today's most used tokenizers such as the 'Byte-Pair Encoding' algorithm \url{https://huggingface.co/docs/tokenizers/index}. It's extremely fast for both training new vocabularies and tokenizing texts.
+  translation: |
+    Interfaces avec la bibliothèque des tokenizers de 'Hugging Face' pour fournir des implémentations d'algorithmes de tokenisation les plus utilisés aujourd'hui, tels que l'algorithme 
+    Byte-Pair Encoding \url{https://huggingface.co/docs/tokenizers/index}. Il est extrêmement rapide tant pour former de nouveaux vocabulaires qu'en tokenisation des textes.
+seealso:
+  original: |+
+    Useful links:
+    \itemize{
+      \item \url{https://github.com/mlverse/tok}
+      \item Report bugs at \url{https://github.com/mlverse/tok/issues}
+    }
+
+  translation: |+
+    Liens utiles :
+    \itemize{
+      \item \url{https://github.com/mlverse/tok}
+      \item Signaler des bugs à \url{https://github.com/mlverse/tok/issues}
+    }
+author:
+  original: |+
+    \strong{Maintainer}: Daniel Falbel \email{daniel@posit.co}
+
+    Other contributors:
+    \itemize{
+      \item  Posit [copyright holder]
+    }
+
+  translation: |+
+    \strong{Maintainer}: Daniel Falbel \email{daniel@posit.co}
+
+    Autres contributeurs :
+    \itemize{
+      \item Posit [titulaire du copyright]
+    }
+
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

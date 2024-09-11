@@ -1,0 +1,117 @@
+title:
+  original: Generic class for processors
+  translation: Classe générique pour les processeurs
+description:
+  original: |
+    Generic class for processors
+
+    Generic class for processors
+  translation: |
+    Classe générique pour les processeurs
+
+    Classe générique pour les processeurs
+seealso:
+  original: "Other processors: \n\\code{\\link{processor_byte_level}}\n"
+  translation: "Autres processeurs: \n\\code{\\link{processor_byte_level}}\n"
+section{Public fields}:
+  original: |
+    \if{html}{\out{<div class="r6-fields">}}
+    \describe{
+    \item{\code{.processor}}{Internal pointer to processor object}
+    }
+    \if{html}{\out{</div>}}
+  translation: |
+    \if{html}{\out{<div class="r6-fields">}}
+    \describe{
+    \item{\code{.processor}}{Pointeur interne vers l'objet traiteur}
+    }
+    \if{html}{\out{</div>}}
+section{Methods}:
+  original: |
+    \subsection{Public methods}{
+    \itemize{
+    \item \href{#method-tok_processor-new}{\code{tok_processor$new()}}
+    \item \href{#method-tok_processor-clone}{\code{tok_processor$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_processor-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_processor-new}{}}}
+    \subsection{Method \code{new()}}{
+    Initializes a tokenizer
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_processor$new(processor)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{processor}}{a raw pointer to a processor}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_processor-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_processor-clone}{}}}
+    \subsection{Method \code{clone()}}{
+    The objects of this class are cloneable with this method.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_processor$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+  translation: |
+    \subsection{Méthodes publiques}{
+    \itemize{
+    \item \href{#method-tok_processor-new}{\code{tok_processor$new()}}
+    \item \href{#method-tok_processor-clone}{\code{tok_processor$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_processor-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_processor-new}{}}}
+    \subsection{Méthode \code{new()}}{
+    Initialise un tokenizer
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_processor$new(processor)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{                                                                                                                                                                       
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{processor}}{un pointeur brut vers un processeur}
+    }                                            
+    \if{html}{\out{</div>}}
+    }                                                                                             
+    }     
+    \if{html}{\out{\r}}         
+    \if{html}{\out{<a id="method-tok_processor-clone"></a>}}
+    \if{latex}{\out{\hypertarget{method-tok_processor-clone}{}}}
+    \subsection{Méthode \code{clone()}}{
+    Les objets de cette classe sont clonables avec cette méthode.
+    \subsection{Usage}{                                                                           
+    \if{html}{\out{<div class="r">}}\preformatted{tok_processor$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }                                                                                             
+                                                  
+    \subsection{Arguments}{                                                                                                                                                                       
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Si une copie profonde doit être faite.}
+    }                                            
+    \if{html}{\out{</div>}}
+    }                                                                                             
+    }  
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

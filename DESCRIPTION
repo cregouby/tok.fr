@@ -10,10 +10,11 @@ Authors@R: c(
            email = "christophe.regouby@free.fr"
            )
     )
-Description: Interface le package de tokisation d' 'Hugging Face' pour donner accès
-  aux tokeniseurs les plus fréquents comme l'algorithme 'Byte-Pair Encoding' 
-  <https://huggingface.co/docs/tokenizers/index>. Il est ultra rapide, autant pour 
-  l'entraînement sur de nouveaux vocabulaires que pour la tokenisation de texte.
+Description: Interfaces avec la bibliothèque des tokenizers de 'Hugging Face' pour fournir
+ des implémentations d'algorithmes de tokenisation les plus utilisés aujourd'hui, tels que 
+ l'algorithme Byte-Pair Encoding \url{https://huggingface.co/docs/tokenizers/index}. Il est
+ extrêmement rapide tant pour former de nouveaux vocabulaires qu'en tokenisation des textes.
+
 License:  MIT + file LICENSE
 Encoding: UTF-8
 Language: fr

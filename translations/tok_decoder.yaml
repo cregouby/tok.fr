@@ -1,0 +1,118 @@
+title:
+  original: Generic class for decoders
+  translation: Classe générique des décodeurs
+description:
+  original: |
+    Generic class for decoders
+
+    Generic class for decoders
+  translation: |
+    Classe générique des décodeurs
+
+    Classe générique des décodeurs
+seealso:
+  original: "Other decoders: \n\\code{\\link{decoder_byte_level}}\n"
+  translation: "Autres décodeurs: \n\\code{\\link{decoder_byte_level}}\n"
+section{Public fields}:
+  original: |
+    \if{html}{\out{<div class="r6-fields">}}
+    \describe{
+    \item{\code{.decoder}}{The raw pointer to the decoder}
+    }
+    \if{html}{\out{</div>}}
+translation: |
+  \if{html}{\out{<div class="r6-fields">}}
+  \describe{
+  \item{\code{.decoder}}{Le pointeur brut vers le décodeur}
+  }
+  \if{html}{\out{</div>}}
+section{Methods}:
+  original: |
+    \subsection{Public methods}{
+    \itemize{
+    \item \href{#method-tok_decoder-new}{\code{tok_decoder$new()}}
+    \item \href{#method-tok_decoder-clone}{\code{tok_decoder$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_decoder-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_decoder-new}{}}}
+    \subsection{Method \code{new()}}{
+    Initializes a decoder
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_decoder$new(decoder)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{decoder}}{a raw decoder pointer}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_decoder-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_decoder-clone}{}}}
+    \subsection{Method \code{clone()}}{
+    The objects of this class are cloneable with this method.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_decoder$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+  translation: |
+    \subsection{Méthodes publiques}{
+    \itemize{
+    \item \href{#method-tok_decoder-new}{\code{tok_decoder$new()}}
+    \item \href{#method-tok_decoder-clone}{\code{tok_decoder$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_decoder-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_decoder-new}{}}}
+    \subsection{Méthode \code{new()}}{
+    Initialise un décodeur
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_decoder$new(decoder)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{decoder}}{un pointeur brut de décodeur}
+    }
+     \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_decoder-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_decoder-clone}{}}}
+    \subsection{Méthode \code{clone()}}{
+    Les objets de cette classe sont clonables avec cette méthode.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_decoder$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Si une copie profonde doit être faite.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

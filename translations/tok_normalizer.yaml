@@ -1,0 +1,117 @@
+title:
+  original: Generic class for normalizers
+  translation: Classe générique pour les normaliseurs
+description:
+  original: |
+    Generic class for normalizers
+
+    Generic class for normalizers
+  translation: |
+    Classe générique pour les normaliseurs
+
+    Classe générique pour les normaliseurs
+seealso:
+  original: "Other normalizers: \n\\code{\\link{normalizer_nfc}},\n\\code{\\link{normalizer_nfkc}}\n"
+  translation: "Autres normaliseurs : \n\\code{\\link{normalizer_nfc}},\n\\code{\\link{normalizer_nfkc}}\n"
+section{Public fields}:
+  original: |
+    \if{html}{\out{<div class="r6-fields">}}
+    \describe{
+    \item{\code{.normalizer}}{Internal pointer to normalizer object}
+    }
+    \if{html}{\out{</div>}}
+  translation: |
+    \if{html}{\out{<div class="r6-fields">}}
+    \describe{
+    \item{\code{.normalizer}}{Pointeur interne vers l'objet normaliseur}
+    }
+    \if{html}{\out{</div>}}
+section{Methods}:
+  original: |
+    \subsection{Public methods}{
+    \itemize{
+    \item \href{#method-tok_normalizer-new}{\code{tok_normalizer$new()}}
+    \item \href{#method-tok_normalizer-clone}{\code{tok_normalizer$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_normalizer-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_normalizer-new}{}}}
+    \subsection{Method \code{new()}}{
+    Initializes a tokenizer
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_normalizer$new(normalizer)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{normalizer}}{a raw pointer to a tokenizer}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_normalizer-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_normalizer-clone}{}}}
+    \subsection{Method \code{clone()}}{
+    The objects of this class are cloneable with this method.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_normalizer$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+  translation: |
+    \subsection{Méthodes publiques}{
+    \itemize{
+    \item \href{#method-tok_normalizer-new}{\code{tok_normalizer$new()}}
+    \item \href{#method-tok_normalizer-clone}{\code{tok_normalizer$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_normalizer-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_normalizer-new}{}}}
+    \subsection{Méthode \code{new()}}{
+    Initialise un tokenizer
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_normalizer$new(normalizer)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{normalizer}}{un pointeur brut vers un tokenizer}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_normalizer-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_normalizer-clone}{}}}
+    \subsection{Méthode \code{clone()}}{
+    Les objets de cette classe sont clonables avec cette méthode.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{tok_normalizer$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Si une copie profonde doit être faite.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
