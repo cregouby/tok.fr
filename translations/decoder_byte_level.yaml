@@ -12,7 +12,7 @@ details:
   original: |
     This decoder is to be used with the \link{pre_tokenizer_byte_level}.
   translation: |
-    Ce décodeur être utilisé conjointement avec le \link{pre_tokenizer_byte_level}.
+    Ce décodeur doit être utilisé conjointement avec le \link{pre_tokenizer_byte_level}.
 
 seealso:
   original: "Other decoders: \n\\code{\\link{tok_decoder}}\n"
@@ -77,7 +77,7 @@ section{Methods}:
     \if{html}{\out{<hr>}}
     \if{html}{\out{<a id="method-tok_decoder_byte_level-clone"></a>}}
     \if{latex}{\out{\\hypertarget{method-tok_decoder_byte_level-clone}{}}}
-    \subsection{Méthodes \code{clone()}}{
+    \subsection{Méthode \code{clone()}}{
     Les objets de cette classe peuvent être clonés avec cette méthode.
     \subsection{Usage}{
     \if{html}{\out{<div class="r">}}\preformatted{decoder_byte_level$clone(deep = FALSE)}\if{html}{\out{</div>}}
