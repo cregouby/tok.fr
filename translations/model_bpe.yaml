@@ -1,0 +1,165 @@
+title:
+  original: BPE model
+  translation: modèle BPE
+description:
+  original: |
+    BPE model
+
+    BPE model
+  translation: |
+    modèle BPE
+
+    modèle BPE
+seealso:
+  original: "Other model: \n\\code{\\link{model_unigram}},\n\\code{\\link{model_wordpiece}},\n\\code{\\link{tok_model}}\n"
+  translation: "Autres modèles: \n\\code{\\link{model_unigram}},\n\\code{\\link{model_wordpiece}},\n\\code{\\link{tok_model}}\n"
+section{Super class}:
+  original: |
+    \code{\link[tok:tok_model]{tok::tok_model}} -> \code{tok_model_bpe}
+  translation: ~
+section{Methods}:
+  original: |
+    \subsection{Public methods}{
+    \itemize{
+    \item \href{#method-tok_model_bpe-new}{\code{model_bpe$new()}}
+    \item \href{#method-tok_model_bpe-clone}{\code{model_bpe$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_model_bpe-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_model_bpe-new}{}}}
+    \subsection{Method \code{new()}}{
+    Initializes a BPE model
+    An implementation of the BPE (Byte-Pair Encoding) algorithm
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{model_bpe$new(
+      vocab = NULL,
+      merges = NULL,
+      cache_capacity = NULL,
+      dropout = NULL,
+      unk_token = NULL,
+      continuing_subword_prefix = NULL,
+      end_of_word_suffix = NULL,
+      fuse_unk = NULL,
+      byte_fallback = FALSE
+    )}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{vocab}}{A named integer vector of string keys and their corresponding ids. Default: \code{NULL}}
+
+    \item{\code{merges}}{A list of pairs of tokens (\verb{[character, character]}). Default: \code{NULL}.}
+
+    \item{\code{cache_capacity}}{The number of words that the BPE cache can contain.
+    The cache speeds up the process by storing merge operation results. Default: \code{NULL.}}
+
+    \item{\code{dropout}}{A float between 0 and 1 representing the BPE dropout to use. Default: \code{NULL}}
+
+    \item{\code{unk_token}}{The unknown token to be used by the model. Default: `NULL```.}
+
+    \item{\code{continuing_subword_prefix}}{The prefix to attach to subword units that don’t
+    represent the beginning of a word. Default: \code{NULL}}
+
+    \item{\code{end_of_word_suffix}}{The suffix to attach to subword units that represent
+    the end of a word. Default: \code{NULL}}
+
+    \item{\code{fuse_unk}}{Whether to fuse any subsequent unknown tokens into a single one. Default: \code{NULL}.}
+
+    \item{\code{byte_fallback}}{Whether to use the spm byte-fallback trick. Default: \code{FALSE}.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_model_bpe-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_model_bpe-clone}{}}}
+    \subsection{Method \code{clone()}}{
+    The objects of this class are cloneable with this method.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{model_bpe$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+  translation: |
+    \subsection{Méthodes publiques}{
+    \itemize{
+    \item \href{#method-tok_model_bpe-new}{\code{model_bpe$new()}}
+    \item \href{#method-tok_model_bpe-clone}{\code{model_bpe$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_model_bpe-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_model_bpe-new}{}}}
+    \subsection{Méthode \code{new()}}{
+    Initialise un modèle BPE
+    Une implémentation de l'algorithme BPE (Byte-Pair Encoding)
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{model_bpe$new(
+      vocab = NULL,
+      merges = NULL,
+      cache_capacity = NULL,
+      dropout = NULL,
+      unk_token = NULL,
+      continuing_subword_prefix = NULL,
+      end_of_word_suffix = NULL,
+      fuse_unk = NULL,
+      byte_fallback = FALSE
+    )}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{vocab}}{Un vecteur entier nommé des chaînes de caractères et leurs identifiants correspondants. Par défaut : \code{NULL}}
+
+    \item{\code{merges}}{Une liste de paires de tokens (\verb{[character, character]}). Par défaut : \code{NULL}.}
+
+    \item{\code{cache_capacity}}{Le nombre de mots que la mémoire cache BPE peut contenir.
+    La mise en cache accélère le processus en stockant les résultats des opérations de fusion. Par défaut : \code{NULL.}}
+
+    \item{\code{dropout}}{Un float entre 0 et 1 représentant la chute BPE à utiliser. Par défaut : \code{NULL}}
+
+    \item{\code{unk_token}}{Le token inconnu à utiliser par le modèle. Par défaut : `NULL```.}
+
+    \item{\code{continuing_subword_prefix}}{Le préfixe à attacher aux unités de sous-mot qui ne représentent pas le début d'un mot. Par défaut : \code{NULL}}
+
+    \item{\code{end_of_word_suffix}}{Le suffixe à attacher aux unités de sous-mot qui représentent la
+
+    \item{\code{fuse_unk}}{Si les jetons inconnus successifs doivent être fusionnés en un seul. Par défaut : \code{NULL}.}
+
+    \item{\code{byte_fallback}}{Si la technique de secours par octets SPM doit être utilisée. Par défaut : \code{FALSE}.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_model_bpe-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_model_bpe-clone}{}}}
+    \subsection{Méthode \code{clone()}}{
+    Les objets de cette classe sont clonables avec cette méthode.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{model_bpe$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Si une clonage profond doit être effectué.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
