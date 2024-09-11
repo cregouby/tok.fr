@@ -1,0 +1,28 @@
+Package: tok.fr
+Type: Translation-module
+Title: Tokenisation rapide 
+Version: 0.1.4.9000
+Date: 2024-05-26
+Authors@R: c(
+    person(given = "Christophe",
+           family = "Regouby",
+           role = c("aut", "cre", "cph"),
+           email = "christophe.regouby@free.fr"
+           )
+    )
+Description: Interface le package de tokisation d' 'Hugging Face' pour donner accès
+  aux tokeniseurs les plus fréquents comme l'algorithme 'Byte-Pair Encoding' 
+  <https://huggingface.co/docs/tokenizers/index>. Il est ultra rapide, autant pour 
+  l'entraînement sur de nouveaux vocabulaires que pour la tokenisation de texte.
+License:  MIT + file LICENSE
+Encoding: UTF-8
+Language: fr
+BugReports: https://github.com/cregouby/tok.fr/issues
+Translates: tok (== 0.1.4.9000)
+LazyData: true
+imports:
+    rhelpi18n
+Remotes: 
+    eliocamp/rhelpi18n
+RoxygenNote: 7.3.2
+
