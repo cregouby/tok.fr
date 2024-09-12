@@ -8,8 +8,6 @@ description:
     Generic training class
   translation: |
     Classe générique d'entraînement
-
-    Classe générique d'entraînement
 seealso:
   original: "Other trainer: \n\\code{\\link{trainer_bpe}},\n\\code{\\link{trainer_unigram}},\n\\code{\\link{trainer_wordpiece}}\n"
   translation: "Autres entraînement: \n\\code{\\link{trainer_bpe}},\n\\code{\\link{trainer_unigram}},\n\\code{\\link{trainer_wordpiece}}\n"
@@ -23,7 +21,7 @@ section{Public fields}:
   translation: |
     \if{html}{\out{<div class="r6-fields">}}
     \describe{                                                                                  
-    \item{\code{.trainer}}{un pointeur vers un entraîneur brut}
+    \item{\code{.trainer}}{un pointeur vers un objet d'entraînement brut}
     }                                   
     \if{html}{\out{</div>}}     
 section{Methods}:
@@ -79,7 +77,7 @@ section{Methods}:
     \if{html}{\out{<a id="method-tok_trainer-new"></a>}}
     \if{latex}{\out{\\hypertarget{method-tok_trainer-new}{}}}
     \subsection{Méthode \code{new()}}{
-    Initialise un entraîneur générique à partir d'un entraîneur brut
+    Initialise un objet d'entraînement générique à partir d'un objet entraîneur brut
     \subsection{Usage}{
     \if{html}{\out{<div class="r">}}\preformatted{tok_trainer$new(trainer)}\if{html}{\out{</div>}}
     }

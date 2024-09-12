@@ -8,8 +8,6 @@ description:
     Generic class for tokenizers
   translation: |
     Classe générique pour les tokeniseurs
-
-    Classe générique pour les tokeniseurs
 seealso:
   original: "Other pre_tokenizer: \n\\code{\\link{pre_tokenizer_byte_level}},\n\\code{\\link{pre_tokenizer_whitespace}}\n"
   translation: "Autres pré-tokeniseurs : \n\\code{\\link{pre_tokenizer_byte_level}},\n\\code{\\link{pre_tokenizer_whitespace}}\n"

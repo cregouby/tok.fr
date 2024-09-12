@@ -8,8 +8,6 @@ description:
     An implementation of the WordPiece algorithm
   translation: |
     Une implémentation de l'algorithme WordPiece
-
-    Une implémentation de l'algorithme WordPiece
 seealso:
   original: "Other model: \n\\code{\\link{model_bpe}},\n\\code{\\link{model_unigram}},\n\\code{\\link{tok_model}}\n"
   translation: "Autres modèles: \n\\code{\\link{model_bpe}},\n\\code{\\link{model_unigram}},\n\\code{\\link{tok_model}}\n"
@@ -93,7 +91,7 @@ section{Methods}:
     \subsection{Arguments}{
     \if{html}{\out{<div class="arguments">}}
     \describe{
-    \item{\code{vocab}}{Un dictionnaire de chaînes de caractères clés et leurs identifiants correspondants.
+    \item{\code{vocab}}{Une liste nomée dont les noms sont les chaînes de caractères et les valeurs les ids.
     Par défaut: \code{NULL}.}
 
     \item{\code{unk_token}}{Le token inconnu à utiliser par le modèle.

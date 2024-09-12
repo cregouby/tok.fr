@@ -1,0 +1,173 @@
+title:
+  original: BPE trainer
+  translation: Processus d'entraînement BPE
+
+description:
+  original: |
+    BPE trainer
+
+    BPE trainer
+  translation: Processus d'entraînement BPE
+seealso:
+  original: "Other trainer: \n\\code{\\link{tok_trainer}},\n\\code{\\link{trainer_unigram}},\n\\code{\\link{trainer_wordpiece}}\n"
+  translation: "Autres processus d'entraînement : \n\\code{\\link{tok_trainer}},\n\\code{\\link{trainer_unigram}},\n\\code{\\link{trainer_wordpiece}}\n"
+section{Super class}:
+  original: |
+    \code{\link[tok:tok_trainer]{tok::tok_trainer}} -> \code{tok_trainer_bpe}
+  translation: ~
+section{Methods}:
+  original: |
+    \subsection{Public methods}{
+    \itemize{
+    \item \href{#method-tok_trainer_bpe-new}{\code{trainer_bpe$new()}}
+    \item \href{#method-tok_trainer_bpe-clone}{\code{trainer_bpe$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_trainer_bpe-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_trainer_bpe-new}{}}}
+    \subsection{Method \code{new()}}{
+    Constrcutor for the BPE trainer
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{trainer_bpe$new(
+      vocab_size = NULL,
+      min_frequency = NULL,
+      show_progress = NULL,
+      special_tokens = NULL,
+      limit_alphabet = NULL,
+      initial_alphabet = NULL,
+      continuing_subword_prefix = NULL,
+      end_of_word_suffix = NULL,
+      max_token_length = NULL
+    )}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{vocab_size}}{The size of the final vocabulary, including all tokens and alphabet.
+    Default: \code{NULL}.}
+
+    \item{\code{min_frequency}}{The minimum frequency a pair should have in order to be merged.
+    Default: \code{NULL}.}
+
+    \item{\code{show_progress}}{Whether to show progress bars while training. Default: \code{TRUE}.}
+
+    \item{\code{special_tokens}}{A list of special tokens the model should be aware of.
+    Default: \code{NULL}.}
+
+    \item{\code{limit_alphabet}}{The maximum number of different characters to keep in the alphabet.
+    Default: \code{NULL}.}
+
+    \item{\code{initial_alphabet}}{A list of characters to include in the initial alphabet,
+    even if not seen in the training dataset. Default: \code{NULL}.}
+
+    \item{\code{continuing_subword_prefix}}{A prefix to be used for every subword that is not a beginning-of-word.
+    Default: \code{NULL}.}
+
+    \item{\code{end_of_word_suffix}}{A suffix to be used for every subword that is an end-of-word.
+    Default: \code{NULL}.}
+
+    \item{\code{max_token_length}}{Prevents creating tokens longer than the specified size.
+    Default: \code{NULL}.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_trainer_bpe-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_trainer_bpe-clone}{}}}
+    \subsection{Method \code{clone()}}{
+    The objects of this class are cloneable with this method.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{trainer_bpe$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+  translation: |
+    \subsection{Méthodes publiques}{
+    \itemize{
+    \item \href{#method-tok_trainer_bpe-new}{\code{trainer_bpe$new()}}
+    \item \href{#method-tok_trainer_bpe-clone}{\code{trainer_bpe$clone()}}
+    }
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_trainer_bpe-new"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_trainer_bpe-new}{}}}
+    \subsection{Méthode \code{new()}}{
+    Constructeur pour le processus d'entraînement BPE
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{trainer_bpe$new(
+      vocab_size = NULL,
+      min_frequency = NULL,
+      show_progress = NULL,
+      special_tokens = NULL,
+      limit_alphabet = NULL,
+      initial_alphabet = NULL,
+      continuing_subword_prefix = NULL,
+      end_of_word_suffix = NULL,
+      max_token_length = NULL
+    )}\if{html}{\out{</div>}}
+    }
+
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{vocab_size}}{La taille du vocabulaire final, y compris tous les tokens et l'alphabet.
+    Par défaut: \code{NULL}.}
+  
+    \item{\code{min_frequency}}{La fréquence minimale qu'une paire pour être fusionnée.
+    Par défaut: \code{NULL}.}
+  
+    \item{\code{show_progress}}{Si vous souhaitez afficher les barres de progression pendant l'entraînement. Par défaut: \code{TRUE}.}
+  
+    \item{\code{special_tokens}}{Une liste de tokens spéciaux que le modèle doit reconnaître.
+    Par défaut: \code{NULL}.}
+  
+    \item{\code{limit_alphabet}}{Le nombre maximum de caractères différents à conserver dans l'alphabet.
+    Par défaut: \code{NULL}.}
+  
+    \item{\code{initial_alphabet}}{Une liste de caractères à inclure dans l'alphabet initial, même s'ils ne sont pas vus dans le jeu de données d'entraînement. Par défaut: \code{NULL}.}
+  
+    \item{\code{continuing_subword_prefix}}{Un préfixe à utiliser pour chaque sous-mot qui n'est pas un début de mot.
+    Par défaut: \code{NULL}.}
+  
+    \item{\code{end_of_word_suffix}}{Un suffixe à utiliser pour chaque sous-mot qui est une fin de mot.
+    Par défaut: \code{NULL}.}
+  
+    \item{\code{max_token_length}}{Empêche la création de tokens plus longs que la taille spécifiée.
+    Par défaut: \code{NULL}.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    \if{html}{\out{<hr>}}
+    \if{html}{\out{<a id="method-tok_trainer_bpe-clone"></a>}}
+    \if{latex}{\out{\\hypertarget{method-tok_trainer_bpe-clone}{}}}
+    \subsection{Méthode \code{clone()}}{
+    Les objets de cette classe sont clonables avec cette méthode.
+    \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}\preformatted{trainer_bpe$clone(deep = FALSE)}\if{html}{\out{</div>}}
+    }
+  
+    \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+    \item{\code{deep}}{Si une copie profonde doit être faite.}
+    }
+    \if{html}{\out{</div>}}
+    }
+    }
+
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

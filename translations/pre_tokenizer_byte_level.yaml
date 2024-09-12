@@ -88,9 +88,10 @@ section{Methods}:
     \subsection{Arguments}{
     \if{html}{\out{<div class="arguments">}}
     \describe{
-    \item{\code{add_prefix_space}}{Indique s'il faut ajouter un espace au premier mot}
+    \item{\code{add_prefix_space}}{Indique s'il faut ajouter un espace au premier mot s'il est manquant. Ainsi \code{bonjour} sera
+    traité exactement comme \code{bien le bonjour}.
 
-    \item{\code{use_regex}}{Définissez ceci sur False pour empêcher ce pré-tokeniseur d'utiliser le regexp GPT2 spécifique pour fractionner les espaces.}
+    \item{\code{use_regex}}{Doit être FALSE pour empêcher le pré-tokeniseur d'utiliser la regexp spécifique de GPT2 pour fractionner les espaces.}
     }
     \if{html}{\out{</div>}}
     }

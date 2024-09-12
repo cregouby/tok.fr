@@ -18,9 +18,9 @@ details:
     PostProcessor must be used.
   translation: |
     Ce post-processeur traite les décalage de charactères.
-    Par défaut, le ByteLevel BPE peut inclure des espaces blancs dans les tokens produits.
-    Si vous ne souhaitez pas que les décalages incluent ces espaces blancs, alors ce
-    PostProcessor doit être utilisé.
+    En effet, le ByteLevel BPE peut, par défaut, inclure des espaces blancs entre les tokens produits.
+    Si vous ne souhaitez pas de décalages induits par ces espaces blancs, alors ce
+    post-processeur doit être utilisé.
 seealso:
   original: "Other processors: \n\\code{\\link{tok_processor}}\n"
   translation: "Autres processeurs : \n\\code{\\link{tok_processor}}\n"
@@ -89,7 +89,7 @@ section{Methods}:
     \subsection{Arguments}{
     \if{html}{\\out{<div class="arguments">}}
     \describe{
-    \item{\\code{trim_offsets}}{Indique s'il faut couper les espaces blancs produisant des décalages.}
+    \item{\\code{trim_offsets}}{Indique s'il faut supprimer les espaces blancs produisant des décalages.}
     }
     \if{html}{\\out{</div>}}
     }

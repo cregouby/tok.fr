@@ -1,15 +1,12 @@
 title:
   original: 'This pre-tokenizer simply splits using the following regex: \verb{\\w+|[^\\w\\s]+}'
   translation: 'Ce pré-tokeniseur divise simplement en utilisant le regex suivant: \verb{\\w+|[^\\w\\s]+}'
-
 description:
   original: |
     This pre-tokenizer simply splits using the following regex: \verb{\\w+|[^\\w\\s]+}
 
     This pre-tokenizer simply splits using the following regex: \verb{\\w+|[^\\w\\s]+}
   translation: |
-    Ce pré-tokeniseur divise simplement en utilisant le regex suivant: \verb{\\w+|[^\\w\\s]+}'
-
     Ce pré-tokeniseur divise simplement en utilisant le regex suivant: \verb{\\w+|[^\\w\\s]+}'
 seealso:
   original: "Other pre_tokenizer: \n\\code{\\link{pre_tokenizer}},\n\\code{\\link{pre_tokenizer_byte_level}}\n"
@@ -64,7 +61,7 @@ section{Methods}:
     \if{html}{\out{<a id="method-tok_pre_tokenizer_whitespace-new"></a>}}
     \if{latex}{\out{\\hypertarget{method-tok_pre_tokenizer_whitespace-new}{}}}
     \subsection{Méthode \code{new()}}{
-    Initialise le tokeniseur bytelevel
+    Initialise le pré-tokeniseur à l'espace
     \subsection{Usage}{
     \if{html}{\out{<div class="r">}}\preformatted{pre_tokenizer_byte_level$new(add_prefix_space = TRUE, use_regex = TRUE)}\if{html}{\out{</div>}}
     }
@@ -74,7 +71,7 @@ section{Methods}:
     \describe{
     \item{\code{add_prefix_space}}{Indique s'il faut ajouter un espace au premier mot}
 
-    \item{\code{use_regex}}{Définissez ceci sur False pour empêcher ce pré-tokeniseur d'utiliser le regexp GPT2 spécifique pour fractionner les espaces.}
+    \item{\code{use_regex}}{Doit être FALSE pour empêcher le pré-tokeniseur d'utiliser la regexp spécifique de GPT2 pour fractionner les espaces.}
     }
     \if{html}{\out{</div>}}
     }

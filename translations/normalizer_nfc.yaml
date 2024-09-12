@@ -8,8 +8,6 @@ description:
     NFC normalizer
   translation: |
     Normalisation NFC
-
-    Normalisation NFC
 seealso:
   original: "Other normalizers: \n\\code{\\link{normalizer_nfkc}},\n\\code{\\link{tok_normalizer}}\n"
   translation: "Autres normalisations: \n\\code{\\link{normalizer_nfkc}},\n\\code{\\link{tok_normalizer}}\n"

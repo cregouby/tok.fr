@@ -8,8 +8,6 @@ description:
     Generic class for tokenization models
 translation: |
   Classe générique pour les modèles de tokenization
-
-  Classe générique pour les modèles de tokenization
 seealso:
   original: "Other model: \n\\code{\\link{model_bpe}},\n\\code{\\link{model_unigram}},\n\\code{\\link{model_wordpiece}}\n"
   translation: "Autres modèles : \n\\code{\\link{model_bpe}},\n\\code{\\link{model_unigram}},\n\\code{\\link{model_wordpiece}}\n"
@@ -23,7 +21,7 @@ section{Public fields}:
   translation: |
     \if{html}{\out{<div class="r6-fields">}}
     \describe{
-    \item{\code{.decoder}}{stoque le pointeur vers le modèle. Interne}
+    \item{\code{.decoder}}{le pointeur vers le modèle. Interne}
     }
     \if{html}{\out{</div>}}
 section{Methods}:

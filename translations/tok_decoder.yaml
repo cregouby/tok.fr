@@ -8,8 +8,6 @@ description:
     Generic class for decoders
   translation: |
     Classe générique des décodeurs
-
-    Classe générique des décodeurs
 seealso:
   original: "Other decoders: \n\\code{\\link{decoder_byte_level}}\n"
   translation: "Autres décodeurs: \n\\code{\\link{decoder_byte_level}}\n"
@@ -87,7 +85,7 @@ section{Methods}:
     \subsection{Arguments}{
     \if{html}{\out{<div class="arguments">}}
     \describe{
-    \item{\code{decoder}}{un pointeur brut de décodeur}
+    \item{\code{decoder}}{un pointeur brut vers le décodeur}
     }
      \if{html}{\out{</div>}}
     }

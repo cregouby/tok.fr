@@ -13,7 +13,7 @@ description:
     an \link{encoding}.
   translation: |
     Un tokeniseur fonctionne comme une pipeline. Il traite un texte brut en entrée 
-    et produit un \link{encoding}.
+    et produit un \link{encoding} en sortie.
 examples:
   original: |+
     withr::with_envvar(c(HUGGINGFACE_HUB_CACHE = tempdir()), {
@@ -34,7 +34,7 @@ section{Public fields}:
   translation: |
     \if{html}{\out{<div class="r6-fields">}}
     \describe{
-    \item{\code{.tokenizer}}{(utilisation non sûre) Pointeur inférieur de niveau public}
+    \item{\code{.tokenizer}}{(utilisation non sûre) Pointeur de bas niveau sur le tokeniseur}
     }
     \if{html}{\out{</div>}}
 section{Active bindings}:
@@ -65,9 +65,9 @@ section{Active bindings}:
 
     \item{\code{decoder}}{Obtient et définit le decodeur}
 
-    \item{\code{padding}}{Obtient la configuration de padding}
+    \item{\code{padding}}{Obtient la configuration de bourrage}
 
-    \item{\code{truncation}}{Obtient la configuration de troncation}
+    \item{\code{truncation}}{Obtient la configuration de troncature}
     }
     \if{html}{\out{</div>}}
 section{Methods}:

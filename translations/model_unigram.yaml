@@ -82,13 +82,13 @@ section{Methods}:
     \subsection{Arguments}{
     \if{html}{\out{<div class="arguments">}}
     \describe{
-    \item{\code{vocab}}{Un dictionnaire de chaînes de caractères clés et de leur score relatif.
+    \item{\code{vocab}}{Une liste nomée dont les noms sont les chaînes de caractères et les valeurs les ids.
     Par défaut : \code{NULL}.}
 
     \item{\code{unk_id}}{L'identifiant du token inconnu à utiliser par le modèle.
     Par défaut : \code{NULL}.}
 
-    \item{\code{byte_fallback}}{Indique s'il faut utiliser la technique de fallback par octets. Par défaut : \code{FALSE}.}
+    \item{\code{byte_fallback}}{Indique s'il faut se rabattre sur l'astuce technique par octets. Par défaut : \code{FALSE}.}
     }
     \if{html}{\out{</div>}}
     }

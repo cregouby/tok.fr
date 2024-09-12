@@ -8,8 +8,6 @@ description:
     BPE model
   translation: |
     modèle BPE
-
-    modèle BPE
 seealso:
   original: "Other model: \n\\code{\\link{model_unigram}},\n\\code{\\link{model_wordpiece}},\n\\code{\\link{tok_model}}\n"
   translation: "Autres modèles: \n\\code{\\link{model_unigram}},\n\\code{\\link{model_wordpiece}},\n\\code{\\link{tok_model}}\n"
@@ -100,8 +98,8 @@ section{Methods}:
     \if{html}{\out{<a id="method-tok_model_bpe-new"></a>}}
     \if{latex}{\out{\\hypertarget{method-tok_model_bpe-new}{}}}
     \subsection{Méthode \code{new()}}{
-    Initialise un modèle BPE
-    Une implémentation de l'algorithme BPE (Byte-Pair Encoding)
+    Initialise un modèle BPE, 
+    une implémentation de l'algorithme BPE (Byte-Pair Encoding)
     \subsection{Usage}{
     \if{html}{\out{<div class="r">}}\preformatted{model_bpe$new(
       vocab = NULL,
@@ -119,24 +117,25 @@ section{Methods}:
     \subsection{Arguments}{
     \if{html}{\out{<div class="arguments">}}
     \describe{
-    \item{\code{vocab}}{Un vecteur entier nommé des chaînes de caractères et leurs identifiants correspondants. Par défaut : \code{NULL}}
+    \item{\code{vocab}}{Une liste nomée dont les noms sont les chaînes de caractères et les valeurs les ids. Par défaut : \code{NULL}}
 
     \item{\code{merges}}{Une liste de paires de tokens (\verb{[character, character]}). Par défaut : \code{NULL}.}
 
     \item{\code{cache_capacity}}{Le nombre de mots que la mémoire cache BPE peut contenir.
     La mise en cache accélère le processus en stockant les résultats des opérations de fusion. Par défaut : \code{NULL.}}
 
-    \item{\code{dropout}}{Un float entre 0 et 1 représentant la chute BPE à utiliser. Par défaut : \code{NULL}}
+    \item{\code{dropout}}{Un réel entre 0 et 1 représentant la chute BPE à utiliser. Par défaut : \code{NULL}}
 
-    \item{\code{unk_token}}{Le token inconnu à utiliser par le modèle. Par défaut : `NULL```.}
+    \item{\code{unk_token}}{Le token inconnu à utiliser par le modèle. Par défaut : \code{NULL}.}
 
     \item{\code{continuing_subword_prefix}}{Le préfixe à attacher aux unités de sous-mot qui ne représentent pas le début d'un mot. Par défaut : \code{NULL}}
 
     \item{\code{end_of_word_suffix}}{Le suffixe à attacher aux unités de sous-mot qui représentent la
+    fin de mot. Par défaut : \code{NULL}}
 
-    \item{\code{fuse_unk}}{Si les jetons inconnus successifs doivent être fusionnés en un seul. Par défaut : \code{NULL}.}
+    \item{\code{fuse_unk}}{Si les tokens inconnus successifs doivent être fusionnés en un seul. Par défaut : \code{NULL}.}
 
-    \item{\code{byte_fallback}}{Si la technique de secours par octets SPM doit être utilisée. Par défaut : \code{FALSE}.}
+    \item{\code{byte_fallback}}{Indique s'il faut se rabattre sur l'astuce technique par octets SPM. Par défaut : \code{FALSE}.}
     }
     \if{html}{\out{</div>}}
     }
