@@ -110,11 +110,11 @@ section{Methods}:
     \subsection{Arguments}{
     \if{html}{\out{<div class="arguments">}}
     \describe{
-    \item{\code{taille_vocabulaire}}{La taille du vocabulaire final, y compris tous les tokens et alphabet.}
+    \item{\code{vocab_size}}{La taille du vocabulaire final, y compris tous les tokens et alphabet.}
   
     \item{\code{show_progress}}{Si vous devez montrer des barres de progression pendant l'entraînement.}
   
-    \item{\code{tokens_speciaux}}{Une liste de tokens spéciaux que le modèle doit reconnaître.}
+    \item{\code{tokens_speciaux}}{Une liste de tokens spéciaux que le modèle doit inclure.}
   
     \item{\code{facteur_de_réduction}}{Le facteur de réduction utilisé à chaque étape de l'entraînement pour réduire le vocabulaire.}
   

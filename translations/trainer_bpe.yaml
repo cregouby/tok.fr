@@ -123,12 +123,12 @@ section{Methods}:
     \item{\code{vocab_size}}{La taille du vocabulaire final, y compris tous les tokens et l'alphabet.
     Par défaut: \code{NULL}.}
   
-    \item{\code{min_frequency}}{La fréquence minimale qu'une paire pour être fusionnée.
+    \item{\code{min_frequency}}{La fréquence minimale d'une paire pour qu'elle puisse fusionner.
     Par défaut: \code{NULL}.}
   
     \item{\code{show_progress}}{Si vous souhaitez afficher les barres de progression pendant l'entraînement. Par défaut: \code{TRUE}.}
   
-    \item{\code{special_tokens}}{Une liste de tokens spéciaux que le modèle doit reconnaître.
+    \item{\code{special_tokens}}{Une liste de tokens spéciaux que le modèle doit inclure.
     Par défaut: \code{NULL}.}
   
     \item{\code{limit_alphabet}}{Le nombre maximum de caractères différents à conserver dans l'alphabet.
@@ -136,10 +136,10 @@ section{Methods}:
   
     \item{\code{initial_alphabet}}{Une liste de caractères à inclure dans l'alphabet initial, même s'ils ne sont pas vus dans le jeu de données d'entraînement. Par défaut: \code{NULL}.}
   
-    \item{\code{continuing_subword_prefix}}{Un préfixe à utiliser pour chaque sous-mot qui n'est pas un début de mot.
+    \item{\code{continuing_subword_prefix}}{Un préfixe à utiliser pour chaque token qui n'est pas un début de mot.
     Par défaut: \code{NULL}.}
   
-    \item{\code{end_of_word_suffix}}{Un suffixe à utiliser pour chaque sous-mot qui est une fin de mot.
+    \item{\code{end_of_word_suffix}}{Un suffixe à utiliser pour chaque token qui est une fin de mot.
     Par défaut: \code{NULL}.}
   
     \item{\code{max_token_length}}{Empêche la création de tokens plus longs que la taille spécifiée.

@@ -118,7 +118,7 @@ section{Methods}:
     \item{\code{vocab_size}}{La taille du vocabulaire final, y compris tous les tokens et l'alphabet.
     Par défaut: \code{NULL}.}
 
-    \item{\code{min_frequency}}{La fréquence minimale qu'un couple doit avoir pour être fusionné.
+    \item{\code{min_frequency}}{La fréquence minimale qu'une paire doit avoir pour être fusionnée.
     Par défaut: \code{NULL}.}
 
     \item{\code{show_progress}}{Indique s'il faut afficher les barres de progression pendant l'entraînement. Par défaut: \code{TRUE}.}
@@ -132,10 +132,10 @@ section{Methods}:
     \item{\code{initial_alphabet}}{Une liste de caractères à inclure dans l'alphabet initial,
     même s'ils n'ont pas été vus dans le jeu de données d'entraînement. Si les chaînes contiennent plus d'un caractère, seul le premier est conservé. Par défaut: \code{NULL}.}
 
-    \item{\code{continuing_subword_prefix}}{Un préfix à utiliser pour chaque demi-mot qui n'est pas le début d'un mot.
+    \item{\code{continuing_subword_prefix}}{Un préfix à utiliser pour chaque token qui n'est pas le début d'un mot.
     Par défaut: \code{NULL}.}
 
-    \item{\code{end_of_word_suffix}}{Le suffixe à ajouter à chaque demi-mot qui est une fin de mot.
+    \item{\code{end_of_word_suffix}}{Le suffixe à ajouter à chaque token qui est une fin de mot.
     Par défaut: \code{NULL}.}
     }
     \if{html}{\out{</div>}}

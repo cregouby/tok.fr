@@ -128,9 +128,9 @@ section{Methods}:
 
     \item{\code{unk_token}}{Le token inconnu à utiliser par le modèle. Par défaut : \code{NULL}.}
 
-    \item{\code{continuing_subword_prefix}}{Le préfixe à attacher aux unités de sous-mot qui ne représentent pas le début d'un mot. Par défaut : \code{NULL}}
+    \item{\code{continuing_subword_prefix}}{Le préfixe à attacher aux unités de token qui ne représentent pas le début d'un mot. Par défaut : \code{NULL}}
 
-    \item{\code{end_of_word_suffix}}{Le suffixe à attacher aux unités de sous-mot qui représentent la
+    \item{\code{end_of_word_suffix}}{Le suffixe à attacher aux unités de token qui représentent la
     fin de mot. Par défaut : \code{NULL}}
 
     \item{\code{fuse_unk}}{Si les tokens inconnus successifs doivent être fusionnés en un seul. Par défaut : \code{NULL}.}
