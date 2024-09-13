@@ -29,7 +29,7 @@ library(tok.fr)
 library(tok)
 
 # consulte l'aide normalement
-?transform_affine
+?model_unigram
 ```
 
 ![exemple de page de documentation en français dans l'onglet Help de RStudio](images/clipboard-3327763328.png)
