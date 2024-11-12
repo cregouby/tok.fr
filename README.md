@@ -11,9 +11,8 @@ Le paquet d'internationalisation de **{tok}** en français (fr)
 Vous pouvez installer la version de development de **{tok.fr}** depuis [GitHub](https://github.com/) via:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("eliocamp/rhelpi18n")
-devtools::install_github("cregouby/tok.fr")
+# install.packages("pak")
+pak::pak("cregouby/tok.fr")
 ```
 
 ## Exemple
